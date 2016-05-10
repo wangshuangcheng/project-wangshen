@@ -24,6 +24,7 @@ public class Main {
         map.put("ccc",3);
         map.put("ddd",4);
 	map.put("wife",2);
+	map.put("husband",1);
 
         map.flash(5);    //设置了缓存的有效时间，当时间到了自动清楚缓存
         Thread.sleep(7000);//为了看到效果，让主线程休息7秒钟，由于刷新时间为5秒，所以肯定没有了数据

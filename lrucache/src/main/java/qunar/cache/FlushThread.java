@@ -5,6 +5,7 @@ import java.util.TimerTask;
 
 /**
  * Created by shuangchengwang on 16-3-12.
+ * wangshuangcheng
  */
 public class FlushThread<K extends Object,V extends Object> extends TimerTask {
     private HashMap< K, V> map;
