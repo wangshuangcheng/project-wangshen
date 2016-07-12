@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--扫描那个包，为里面的所有类起一个别名-->
+    <typeAliases>
+        <package name="com.qunar.bean"></package>
+    </typeAliases>
+
+
+    <mappers>
+        <mapper resource="sqlmappers/StudentPraMapper.xml"></mapper>
+    </mappers>
+</configuration>

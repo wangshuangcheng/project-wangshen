@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qunar.dao.StudnetPraMapper">
+
+    <select id="selectStudent" parameterType="int" resultType="StudentPra">
+        SELECT id,name,sex FROM student WHERE id = #{value}
+    </select>
+
+   <select id="selectStudents" resultType="StudentPra">
+       SELECT id,name,sex FROM student
+   </select>
+
+    <insert id="saveStudent" parameterType="StudentPra">
+        INSERT INTO student(name,sex) VALUES(#{name},#{sex})
+    </insert>
+
+    <delete id="deleteStudent" parameterType="int">
+        DELETE FROM student WHERE id = #{value}
+    </delete>
+
+    <update id="updateStudent" parameterType="StudentPra">
+        UPDATE student set name=#{name} ,sex=#{sex} WHERE id =#{id}
+    </update>
+</mapper>
